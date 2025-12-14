@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Xəstə Profili – Lalə İsmayılova</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            max-width: 450px;
+            width: 95%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        h1 {
+            color: #2E86C1;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        /* Эмблема сверху */
+        .emblem {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px auto;
+        }
+
+        .info-block {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin: 10px 0;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            color: #fff;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+
+        .info-block i {
+            font-size: 20px;
+            margin-right: 15px;
+            min-width: 25px;
+            text-align: center;
+        }
+
+        /* Цвета по категориям */
+        .personal { background: #3498db; }
+        .medical { background: #27ae60; }
+        .emergency { background: #f1c40f; color: #000; }
+
+        /* Hover-эффект */
+        .info-block:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Анимация */
+        .card { animation: fadeIn 1s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-15px);} to { opacity: 1; transform: translateY(0);} }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <!-- Эмблема сверху -->
+        <img src="emblem.png" alt="HeyPal Emblem" class="emblem">
+
+        <h1>Xəstə Profili</h1>
+
+        <!-- Личные данные -->
+        <div class="info-block personal">
+            <i class="fas fa-user"></i>
+            <span>Ad, Soyad: Lalə İsmayılova</span>
+        </div>
+        <div class="info-block personal">
+            <i class="fas fa-birthday-cake"></i>
+            <span>Yaş: 61</span>
+        </div>
+        <div class="info-block personal">
+            <i class="fas fa-ruler-vertical"></i>
+            <span>Boy: 170 cm</span>
+        </div>
+        <div class="info-block personal">
+            <i class="fas fa-weight"></i>
+            <span>Çəki: 80 kg</span>
+        </div>
+
+        <!-- Медицинские данные -->
+        <div class="info-block medical">
+            <i class="fas fa-tint"></i>
+            <span>Qan qrupu: A+</span>
+        </div>
+        <div class="info-block medical">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>Allergiyalar: qoz-fındıq, sitrus meyvələri</span>
+        </div>
+
+        <!-- Экстренный контакт -->
+        <div class="info-block emergency">
+            <i class="fas fa-phone"></i>
+            <span>Təcili əlaqə: +994 50 123 45 67</span>
+        </div>
+
+        <div class="footer">
+            Demo sayt – test məlumatları
+        </div>
+    </div>
+</body>
+</html>
